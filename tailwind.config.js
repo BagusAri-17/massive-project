@@ -21,6 +21,10 @@ export default {
         lg: "1280px",
         xl: "1440px"
       },
+
+      colors: {
+        "primary": "#3A9F1F"
+      }
     },
   },
   plugins: [],
