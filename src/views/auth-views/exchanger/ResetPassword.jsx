@@ -1,18 +1,18 @@
-import LogoWeb from "../../assets/auth-views/reset-password/logoWeb.png";
+import logoImage from "../../../assets/auth-views/logo.png"
+import illustrationImage from "../../../assets/auth-views/illustration_exchanger.png"
 import { FaArrowLeft } from "react-icons/fa";
-import Iresetpengelola from "../../assets/auth-views/reset-password/Iresetpengelola.png";
 
-export const ResetPengelola = () => {
+const ResetPassword = () => {
   return (
     <>
-      <section className="h-screen flex justify-center items-center ">
+      <section className="flex items-center justify-center h-screen ">
         <div className="container border-solid">
-          <div className="grid grid-cols-12 justify-center items-center">
+          <div className="grid items-center justify-center grid-cols-12">
             {/*ilustrasi*/}
             <div className="col-span-7">
-              <div className="flex  items-center gap-x-8">
-                <img src={LogoWeb} alt="" className="w-[140px]" />
-                <div className="flex flex-col justify-center itmes-center text-center gap-y-4">
+              <div className="flex items-center gap-x-8">
+                <img src={logoImage} alt="" className="w-[140px]" />
+                <div className="flex flex-col justify-center text-center itmes-center gap-y-4">
                   <h2 className="text-7xl">Waste Wise</h2>
                   <p className="teks-xs">
                     Ketika kita merawat bumi, kita merawat diri kita sendiri.
@@ -20,12 +20,12 @@ export const ResetPengelola = () => {
                 </div>
               </div>
               <div>
-                <img src={Iresetpengelola} alt="" className="mx-auto" />
+                <img src={illustrationImage} alt="" className="mx-auto" />
               </div>
             </div>
 
             {/*form*/}
-            <div className="col-span-5 flex flex-col gap-y-10">
+            <div className="flex flex-col col-span-5 gap-y-10">
               <button>
                 <FaArrowLeft className="text-4xl " />
               </button>
@@ -65,7 +65,7 @@ export const ResetPengelola = () => {
                 <div className="text-center">
                   <p className="text-base">
                     Belum Punya Akun?{" "}
-                    <a href="" className="font-bold text-base">
+                    <a href="" className="text-base font-bold">
                       Daftar
                     </a>
                   </p>
@@ -85,3 +85,5 @@ export const ResetPengelola = () => {
     </>
   );
 };
+
+export default ResetPassword

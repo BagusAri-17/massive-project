@@ -1,9 +1,9 @@
-import Login from "./views/auth-views/Login"
+import SetupRoutes from "@/routers"
 
 export default function App() {
 	return (
 		<>
-			<Login />
+			<SetupRoutes />
 		</>
 	)
 }

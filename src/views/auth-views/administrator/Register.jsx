@@ -1,18 +1,18 @@
-import logoImage from '../../assets/auth-views/logo.png'
-import illustrationImage from '../../assets/auth-views/illustration_penukar.png'
+import logoImage from '../../../assets/auth-views/logo.png'
+import illustrationImage from '../../../assets/auth-views/illustration_administrator.png'
 import { FaArrowLeft } from "react-icons/fa";
 
-const RegisterPenukar = () => {
+const Register = () => {
     return (
         <>
-			<section className="h-screen flex justify-center items-center">
+			<section className="flex items-center justify-center h-screen">
 				<div className="container">
-                    <div className="grid grid-cols-12 justify-center items-center">
+                    <div className="grid items-center justify-center grid-cols-12">
                         {/*illustrasi*/}
                         <div className="col-span-7">
                             <div className="flex items-center gap-x-8">
                                 <img src={logoImage} alt="" />
-                                <div className="flex flex-col gap-y-4 items-center">
+                                <div className="flex flex-col items-center gap-y-4">
                                     <h2 className="text-7xl">Waste Wise</h2>
                                     <p className="text-xs">Ketika kita merawat bumi, kita merawat diri kita sendiri.</p>
                                 </div>
@@ -30,7 +30,7 @@ const RegisterPenukar = () => {
                             <div>
                                 <h2 className="font-semibold text-[25px]">Daftar Akun</h2>
                             </div>
-                            <form action="" className="flex flex-col gap-y-4">
+                            <form action="" className="flex flex-col gap-y-3">
                                 <div className="flex gap-x-4">
                                     <input type="text" placeholder="Nama Depan" className="w-1/2 border border-[#000000] p-4 rounded-[10px]" />
                                     <input type="text" placeholder="Nama Belakang" className="w-1/2 border border-[#000000] p-4 rounded-[10px]" />
@@ -42,9 +42,15 @@ const RegisterPenukar = () => {
                                     <input type="tel" placeholder='Nomor Telepon' className="w-full border border-[#000000] p-4 rounded-[10px]"/>
                                 </div>
                                 <div>
+                                    <input type="text" placeholder='Alamat' className="w-full border border-[#000000] p-4 rounded-[10px]"/>
+                                </div>
+                                <div>
                                     <input type="password" placeholder='Password' className="w-full border border-[#000000] p-4 rounded-[10px]"/>
                                 </div>
-                                <button className="py-4 px-30  bg-primary rounded-[10px]">Daftar</button>
+                                <div>
+                                    <input type="password" placeholder='Ulangi Password' className="w-full border border-[#000000] p-4 rounded-[10px]"/>
+                                </div>
+                                <button className="py-4 px-30 bg-primary rounded-[10px]">Daftar</button>
                                 <a href="" className="text-center">Sudah punya akun? <b>Masuk</b></a>
                                 <div>
                                     <input type="checkbox" id="terms" className="mr-2" />
@@ -59,4 +65,4 @@ const RegisterPenukar = () => {
     )
 }
 
-export default RegisterPenukar
+export default Register
