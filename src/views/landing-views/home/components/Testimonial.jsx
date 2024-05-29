@@ -27,11 +27,11 @@ export default function Testimonial() {
         <>
             <section className="py-20">
                 <div className="container">
-                    <div className="flex flex-col gap-y-8">
+                    <div className="flex flex-col gap-y-8 md:gap-y-12">
                         <HeaderSection title="Testimoni" />
-                        <div className="flex flex-col items-center gap-y-6">
-                            <h2 className="font-bold text-5xl text-[#2B3D40] max-w-3xl text-center">Kami Dipercaya Lebih dari 1000+</h2>
-                            <div className="grid grid-cols-3 gap-x-6">
+                        <div className="flex flex-col items-center gap-y-4 md:gap-y-8">
+                            <h2 className="max-w-3xl text-center title-section">Kami Dipercaya Lebih dari 1000+</h2>
+                            <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-2 lg:grid-cols-3">
                                 {testimonialData.map((items) => (
                                     <CardTestimonial name={items.name} address={items.address} comment={items.comment} />
                                 ))}
