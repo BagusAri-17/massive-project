@@ -8,7 +8,7 @@ export default function Footer() {
         <footer>
             <div className="bg-center bg-cover h-[300px] lg:h-[600px] flex items-center justify-center" style={{ backgroundImage: `url(${footerImage})` }}>
                 <div className="container flex flex-col gap-y-8">
-                    <h2 className="text-white text-2xl font-bold md:text-[60px] text-center">Bergabunglah Bersama Kami Untuk Lingkungan Yang Lebih Indah</h2>
+                    <h2 className="text-2xl font-bold text-center text-white md:text-4xl lg:text-6xl">Bergabunglah Bersama Kami Untuk Lingkungan Yang Lebih Indah</h2>
                     <ButtonNavigation name="Join Us" />
                 </div>
             </div>

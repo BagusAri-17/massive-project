@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
 import Home from "@/views/landing-views/home"
+import Contact from "@/views/landing-views/contact"
 
 import LoginAdministrator from "@/views/auth-views/administrator/Login";
 import LoginExchanger from "@/views/auth-views/exchanger/Login";
@@ -13,6 +14,8 @@ export default function SetupRoutes() {
 	return (
 		<Routes>
 			<Route path="/" element={<Home />} />
+			<Route path="/contact" element={<Contact />} />
+		
 			<Route path="/admin/login" element={<LoginAdministrator />} />
 			<Route path="/admin/register" element={<RegisterAdministrator />} />
 			<Route path="/admin/reset-password" element={<ResetPasswordAdministrator />} />

@@ -33,7 +33,7 @@ export default function Testimonial() {
                             <h2 className="max-w-3xl text-center title-section">Kami Dipercaya Lebih dari 1000+</h2>
                             <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-2 lg:grid-cols-3">
                                 {testimonialData.map((items) => (
-                                    <CardTestimonial name={items.name} address={items.address} comment={items.comment} />
+                                    <CardTestimonial key={items.id} name={items.name} address={items.address} comment={items.comment} />
                                 ))}
                             </div>
                         </div>

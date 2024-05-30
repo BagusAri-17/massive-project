@@ -29,7 +29,7 @@ export default function Article() {
                             <h2 className="max-w-xl title-section">Artikel Unggulan Waste Wise</h2>
                             <div className="grid grid-cols-1 gap-2 md:gap-4 lg:grid-cols-2">
                                 {articleData.map((items) => (
-                                    <CardArticle title={items.title} description={items.description} date={items.date} link={items.link} />
+                                    <CardArticle key={items.id} title={items.title} description={items.description} date={items.date} link={items.link} />
                                 ))}
                             </div>
                         </div>

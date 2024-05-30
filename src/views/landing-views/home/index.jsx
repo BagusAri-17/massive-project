@@ -9,8 +9,8 @@ import Testimonial from "./components/Testimonial";
 export default function Home() {
     return (
         <>
-            {/* <Header /> */}
-            {/* <Hero /> */}
+            <Header />
+            <Hero />
             <AboutUs />
             <OurProgram />
             <Testimonial />
