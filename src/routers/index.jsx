@@ -12,6 +12,8 @@ import RegisterExchanger from "@/views/auth-views/exchanger/Register";
 import ResetPasswordAdministrator from "@/views/auth-views/administrator/ResetPassword";
 import ResetPasswordExchanger from "@/views/auth-views/exchanger/ResetPassword";
 import Edukasi from "../views/landing-views/edukasi";
+import AppLayout from "../components/layout-components/AppLayout";
+import Dashboard from "../views/app-views/dashboard";
 
 export default function SetupRoutes() {
 	return (
@@ -20,6 +22,10 @@ export default function SetupRoutes() {
 			<Route path="/contact" element={<Contact />} />
 			<Route path="/campaign" element={<Campaign/>} />
 			<Route path="/article" element={<Article/>} />
+
+			<Route path="/dashboard" element={<AppLayout />} >
+				<Route path="main" element={<Dashboard />} />
+			</Route>
 		
 			<Route path="/admin/login" element={<LoginAdministrator />} />
 			<Route path="/admin/register" element={<RegisterAdministrator />} />
