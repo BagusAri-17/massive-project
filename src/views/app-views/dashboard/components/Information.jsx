@@ -26,14 +26,14 @@ export default function Information() {
     return (
         <>
             <section>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:gap-8">
+                <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-4 xl:grid-cols-3 xl:gap-8">
                     {informationData.map((items) => (
                         <div key={items.id} className="p-6 bg-white rounded-lg shadow">
-                            <div className="flex flex-col gap-y-4">
+                            <div className="flex flex-row gap-4 lg:flex-col">
                                 {items.icon}
                                 <div className="flex flex-col">
-                                    <h3 className="text-2xl font-bold">{items.amount}</h3>
-                                    <p className="text-sm">{items.title}</p>
+                                    <h3 className="text-xl font-bold md:text-2xl text-secondary">{items.amount}</h3>
+                                    <p className="text-sm md:text-base text-secondary">{items.title}</p>
                                 </div>
                             </div>
                         </div>

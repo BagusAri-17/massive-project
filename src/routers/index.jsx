@@ -13,6 +13,10 @@ import ResetPasswordAdministrator from "@/views/auth-views/administrator/ResetPa
 import ResetPasswordExchanger from "@/views/auth-views/exchanger/ResetPassword";
 import AppLayout from "../components/layout-components/AppLayout";
 import Dashboard from "../views/app-views/dashboard";
+import Profile from "../views/app-views/profile";
+import ChangeTrash from "../views/app-views/change-trash";
+import TransactionHistory from "../views/app-views/transaction-history";
+import Point from "../views/app-views/point";
 
 export default function SetupRoutes() {
   return (

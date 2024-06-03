@@ -32,7 +32,7 @@ export default function Topbar({setmenu, setprofile, profile }) {
                             <div className={`absolute right-0 w-48 lg:w-64 mt-4 bg-white border rounded-sm shadow ${profile ? "block" : "hidden"}`}>
                                 <ul className="flex flex-col gap-2 px-4 py-4 border-b lg:gap-4 lg:px-6 lg:py-6">
                                     <li>
-                                        <a href="" className="flex items-center gap-2 text-gray-500 duration-300 ease-in-out lg:gap-4 hover:text-primary">
+                                        <a href="/profile" className="flex items-center gap-2 text-gray-500 duration-300 ease-in-out lg:gap-4 hover:text-primary">
                                             <FiUser className="text-lg lg:text-2xl" />
                                             <span className="text-sm lg:text-base">My Profile</span>
                                         </a>
