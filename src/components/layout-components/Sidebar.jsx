@@ -22,13 +22,13 @@ export default function Sidebar({setmenu, menu}) {
                         <div>
                             <ul className="flex flex-col gap-0 lg:gap-2">
                                 <li>
-                                    <a href="" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
+                                    <a href="/dashboard" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
                                         <FiAirplay className="text-lg lg:text-2xl" />
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
+                                    <a href="/change-trash" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
                                         <FiRefreshCw className="text-lg lg:text-2xl" />
                                         <span>Tukar Sampah</span>
                                     </a>
@@ -40,13 +40,13 @@ export default function Sidebar({setmenu, menu}) {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
+                                    <a href="/transaction-history" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
                                         <FiClock className="text-lg lg:text-2xl" />
                                         <span>Riwayat Transaksi</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
+                                    <a href="/my-point" className="relative flex items-center gap-3 px-4 py-4 text-white duration-300 ease-in-out rounded-lg lg:gap-4 group hover:bg-primary">
                                         <FiGift className="text-lg lg:text-2xl" />
                                         <span>Poinku</span>
                                     </a>

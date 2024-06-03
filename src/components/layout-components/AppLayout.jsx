@@ -24,7 +24,7 @@ export default function AppLayout() {
                     <div className="relative flex flex-col flex-1 overflow-x-hidden overflow-y-auto">
                         <Topbar setmenu={OpenMenu} setprofile={OpenProfile} profile={openProfile} />
                         <main>
-                            <div className="flex flex-col p-4 mx-auto max-w-screen-2xl md:p-6 2xl:p-10 gap-y-8">
+                            <div className="flex flex-col p-4 mx-auto max-w-screen-2xl md:p-6 2xl:p-10 gap-y-8 md:gap-y-16">
                                 <Content />
                             </div>
                         </main>

@@ -14,6 +14,10 @@ import ResetPasswordExchanger from "@/views/auth-views/exchanger/ResetPassword";
 import Edukasi from "../views/landing-views/edukasi";
 import AppLayout from "../components/layout-components/AppLayout";
 import Dashboard from "../views/app-views/dashboard";
+import Profile from "../views/app-views/profile";
+import ChangeTrash from "../views/app-views/change-trash";
+import TransactionHistory from "../views/app-views/transaction-history";
+import Point from "../views/app-views/point";
 
 export default function SetupRoutes() {
 	return (
@@ -23,8 +27,12 @@ export default function SetupRoutes() {
 			<Route path="/campaign" element={<Campaign/>} />
 			<Route path="/article" element={<Article/>} />
 
-			<Route path="/dashboard" element={<AppLayout />} >
-				<Route path="main" element={<Dashboard />} />
+			<Route path="/" element={<AppLayout />} >
+				<Route path="dashboard" element={<Dashboard />} />
+				<Route path="profile" element={<Profile />} />
+				<Route path="change-trash" element={<ChangeTrash />} />
+				<Route path="transaction-history" element={<TransactionHistory />} />
+				<Route path="my-point" element={<Point />} />
 			</Route>
 		
 			<Route path="/admin/login" element={<LoginAdministrator />} />
