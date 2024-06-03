@@ -1,18 +1,17 @@
-import { FiGift, FiTrash, FiFileText } from "react-icons/fi";
+import { FiUsers, FiTrash, FiFileText } from "react-icons/fi";
 
 export default function Information() {
-
     const informationData = [
         {
             id: 1,
-            amount: "50",
-            title: "Total Poinmu",
-            icon: <FiGift className="size-12 text-primary" />
+            amount: "500",
+            title: "Jumlah Warga",
+            icon: <FiUsers className="size-12 text-primary" />
         },
         {
             id: 2,
             amount: "50",
-            title: "Pengelola Bank Sampah",
+            title: "Pengguna Bank Sampah",
             icon: <FiTrash className="size-12 text-primary" />
         },
         {

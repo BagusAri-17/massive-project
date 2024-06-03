@@ -56,7 +56,14 @@ export default function InformationChangeTrash() {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div className="flex flex-col gap-y-2">
+                                <label htmlFor="" className="text-sm font-medium md:text-base text-secondary">Lokasi Bank Sampah</label>
+                                <select name="" id="" className="w-full px-5 py-3 text-sm transition duration-300 bg-transparent border border-gray-300 rounded-lg outline-none focus:border-primary text-secondary">
+                                    <option value="" className="text-gray-300">Pilih Bank Sampah</option>
+                                    <option value="">Bank Sampah Cipta Abadi</option>
+                                    <option value="">Bank Sampah Cipta GaAbadi</option>
+                                </select>
+                            </div>
                             <div>
                                 <button type="submit" className="px-4 py-2 text-sm font-semibold text-white rounded-full md:px-6 md:py-3 md:text-base bg-primary">Kirim</button>
                             </div>

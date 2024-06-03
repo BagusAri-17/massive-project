@@ -7,11 +7,11 @@ import Startlittle from "./components/Startlittle";
 export default function Edukasi() {
   return (
     <>
-      <Header></Header>
-      <Heroedukasi></Heroedukasi>
-      <Ourefforts></Ourefforts>
-      <Startlittle></Startlittle>
-      <Footer></Footer>
+      <Header />
+      <Heroedukasi />
+      <Ourefforts />
+      <Startlittle />
+      <Footer />
     </>
   );
 }

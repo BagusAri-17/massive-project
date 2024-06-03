@@ -3,16 +3,16 @@ import Header from "../../../components/layout-components/Header";
 import BackNav from "./components/BackNav";
 import Hero from "./components/Hero";
 import SearchBar from "./components/SearchBar";
-import Article from "./components/Article";
+import ArticleList from "./components/ArticleList";
 
-export default function Contact() {
+export default function Article() {
     return (
         <>
             <Header />
             <BackNav />
             <Hero />
             <SearchBar />
-            <Article />
+            <ArticleList />
             <Footer />
         </>
     )
